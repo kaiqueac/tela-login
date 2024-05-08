@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: linear-gradient(to bottom, rgba(69, 181, 250, 0.733), rgba(13, 13, 236, 0.753));
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 260px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+
+    transition: width .1s, height .1s;
+    transition-timing-function: ease;
+}
+
+#imagem {
+    display: block;
+    background: url("../imagens/login.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario p {
+    font-size: 1em;
+}
+
+.campo {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 2px 0px;
+}
+
+
+.botao-entrar {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(19, 19, 219);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.botao-entrar:hover {
+    background-color: rgb(47, 47, 250);
+}
+
+.botao-esqueci  {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 80%;
+    height: 30px;
+    padding-top: 3px;
+    background-color: rgb(7, 7, 128);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.botao-esqueci:hover {
+    background-color: rgb(19, 19, 68);
+}
+
+.botao-esqueci span {
+    font-size: 1em;
+}
